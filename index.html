@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Benu - Building Future Apps</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <style>
+        
+        :root {
+            --primary-color: #2D7A6D;
+            --bg-color: #D3EEEE;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .navbar {
+            background-color: white;
+	        border-radius: 50px;
+            padding: 15px 0;
+            
+            margin: 40px;
+            
+           
+        }
+        
+        
+
+        .navbar-brand {
+            font-size: 24px;
+            font-weight: bold;
+            color: var(--primary-color);
+        }
+
+        .nav-link {
+            color: #333;
+            margin: 0 10px;
+        }
+
+        .btn-primary {
+            background-color: var(--primary-color);
+            border: none;
+            border-radius: 8px;
+            padding: 10px 20px;
+        }
+
+	    .btn-outline {
+            background-color: white;
+            color: var(--primary-color);
+            border: 2px solid var(--primary-color);
+            border-radius: 8px;
+            padding: 10px 20px;
+        }
+
+        .hero-section {
+            padding: 80px 0;
+        }
+
+        .hero-title {
+            font-size: 48px;
+            font-weight: bold;
+            line-height: 1.2;
+        }
+
+        .quality-section {
+            background-color: white;
+            border-radius: 30px;
+            padding: 60px 0;
+            margin: 40px 0;
+        }
+
+	    .badge-primary {
+            background-color: white;
+            color: var(--primary-color);
+            border: 1px solid var(--primary-color);
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-weight: 500;
+        }
+
+        .stats-card {
+            background-color: white;
+            border-radius: 30px;
+            padding: 40px;
+            margin: 40px 0;
+        }
+
+        .stats-number {
+            font-size: 3rem;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+        }
+
+        .stats-label {
+            color: #666;
+            font-size: 1rem;
+        }
+
+        .footer {
+            background-color: white;
+            padding: 60px 0 0 0;
+            margin-top: auto;
+        }
+
+        .newsletter-form {
+            display: flex;
+            align-items: center;
+            background-color: var(--primary-color);
+            border-radius: 25px;
+            padding: 5px;
+            margin-top: 20px;
+        }
+
+        .newsletter-form input {
+            background-color: transparent;
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            flex-grow: 1;
+        }
+
+        .newsletter-form input::placeholder {
+            color: rgba(255, 255, 255, 0.8);
+        }
+
+        .newsletter-form input:focus {
+            outline: none;
+        }
+
+        .newsletter-form button {
+            background-color: white;
+            border: none;
+            border-radius: 20px;
+            padding: 8px 25px;
+            color: var(--primary-color);
+            font-weight: 500;
+        }
+
+        .social-icons {
+            display: flex;
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .social-icons a {
+            color: #333;
+            font-size: 20px;
+            text-decoration: none;
+        }
+
+        .footer {
+            background-color: #d3eeee;
+        }
+
+        .footer-contact {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .footer-contact a {
+            color: #666;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .copyright {
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 40px;
+            color: #666;
+        }
+    </style>
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg center" >
+        <div class="container">
+            <a class="navbar-brand" href="#"><img src="image/logo.png" alt="App illustration" class="img-fluid"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#features">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
+                <button class="btn btn-primary" style="border-radius: 30px;">Get Started</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section" id="home">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <span class="badge badge-primary mb-3">Belum Nemu App</span>
+                    <h1 class="hero-title mb-4">Lebih Mudah, Lebih Cepat! Temukan Barang Hilang Anda Disini!</h1>
+                    <p class="text-muted mb-4">Aplikasi pintar kami mempermudah pencarian barang Anda hanya dalam beberapa langkah.</p>
+                    <button class="btn btn-primary" style="border-radius: 30px;">Get Started Now</button>
+                </div>
+                <div class="col-lg-6">
+                    <img src="image/home.png" alt="App illustration" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </section>
+
+        <!-- Stats Section -->
+        <section class="container">
+            <div class="stats-card">
+                <div class="row text-center">
+                    <div class="col-md-4 mb-4 mb-md-0">
+                        <div class="stats-number">150K+</div>
+                        <div class="stats-label">Barang berhasil ditemukan</div>
+                    </div>
+                    <div class="col-md-4 mb-4 mb-md-0">
+                        <div class="stats-number">90%</div>
+                        <div class="stats-label">Kepuasan Pengguna</div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="stats-number">100%</div>
+                        <div class="stats-label">Tingkat keamanan terjamin</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+
+    <!-- Quality Section -->
+    <section class="quality-section" id="quality">
+        <div class="container">
+            <span class="badge badge-primary mb-3">Best Choice</span>
+            <h2 class="display-4 mb-5"><strong>High Quality Apps</strong></h2>
+            
+            <div class="row g-4">
+                <!-- Feature 1 -->
+                <div class="col-md-4">
+                    <br><div class="feature-icon"><img src="image/quality1.png"></div><br>
+                    <h3>Pencarian Tepat dan Akurat</h3>
+                    <p class="text-muted">Teknologi pencarian canggih yang membantu menemukan barang hilang dengan cepat, menghemat waktu dan tenaga Anda.</p>
+                </div>
+                
+                <!-- Feature 2 -->
+                <div class="col-md-4">
+                    <br><div class="feature-icon"><img src="image/quality2.png"></div><br>
+                    <h3>Laporan Hilang dan Temuan yang Mudah</h3>
+                    <p class="text-muted">Fitur lapor hilang dan temuan barang yang sederhana dan mudah digunakan, dengan sistem pelacakan yang intuitif dan informatif.</p>
+                </div>
+                
+                <!-- Feature 3 -->
+                <div class="col-md-4">
+                    <br><div class="feature-icon"><img src="image/quality3.png"></div><br>
+                    <h3>Privasi Terjamin</h3>
+                    <p class="text-muted">Semua data dan informasi pengguna terlindungi dengan keamanan tingkat tinggi, sehingga Anda dapat melacak barang dengan tenang dan nyaman.</p>
+                </div>
+                
+                <!-- Feature 4 -->
+                <div class="col-md-4">
+                    <br><div class="feature-icon"><img src="image/quality4.png"></div><br>
+                    <h3>Sistem Verifikasi Temuan</h3>
+                    <p class="text-muted">Lorem ipsum dolor sit amet consectetur. Mauris in facilisis ligula nisi adipiscian.</p>
+                </div>
+                
+                <!-- Feature 5 -->
+                <div class="col-md-4">
+                    <br><div class="feature-icon"><img src="image/quality5.png"></div><br>
+                    <h3>Quality Guarantee</h3>
+                    <p class="text-muted">Lorem ipsum dolor sit amet consectetur. Mauris in facilisis ligula nisi adipiscian.</p>
+                </div>
+                
+                <!-- Feature 6 -->
+                <div class="col-md-4">
+                    <br><div class="feature-icon"><img src="image/quality6.png"></div><br>
+                    <h3>Friendly production processes</h3>
+                    <p class="text-muted">Lorem ipsum dolor sit amet consectetur. Mauris in facilisis ligula nisi adipiscian.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section-->
+     <section class="features" >
+        <div class="container" style="margin-top: 2cm; margin-bottom: 2cm;">
+            <div class="row">
+                <div class="col-lg-6">
+                    <h1><strong>Fiturnya</strong></h1><br><br>
+                    <p>Aplikasi kami menyediakan fitur lapor hilang dan temuan barang yang sederhana dan mudah digunakan, dengan sistem pelacakan yang intuitif dan informatif.</p>
+                    <span><p><img src="image/pentung.png" alt="gambar fiutr" class="img-fluid"><strong>Laporan Kehilangan:</strong>&nbsp;Memungkinkan pengguna untuk melaporkan barang yang  <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ditemukan dengan detail seperti deskripsi, lokai penemuan, dan lokasi penitipan.</p></span>
+                    <span><p><img src="image/pentung.png" alt="gambar fiutr" class="img-fluid"><strong>Pencarian Barang:</strong>&nbsp;Pengguna dapat mencari barang  yang telah ditemukan atau <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; dilaporkan oleh pengguna  lain berdasarkan kategori, lokasi, atau kata kunci <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; tertentu.</p></span>
+                    <span><p><img src="image/pentung.png" alt="gambar fiutr" class="img-fluid"><strong>Verifikasi Foto Barang:</strong>&nbsp;Memungkinkan pengguna  untuk melaporkan barang yang <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  ditemukan dengan detail seperti deskripsi, lokai penemuan, dan lokasi <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; penitipan.</p></span>
+                </div>
+                
+                <div class="col-lg-6">
+                    <img src="image/fitur.png" alt="gambar fiutr" class="img-fluid" style="padding-left: 180px;">
+                </div>
+            </div>
+        </div>
+     </section>
+
+     <!-- Services -->
+      <section class="services">
+        <div class="row g-4">
+            <div class="container" style="background-color: #fff; border-radius: 50px; padding: 80px 0;margin: 40px 0;">
+                <div class="container" style="background-color: #D3EEEE ; border-radius: 25px; padding: 90px 70px; margin-top: 20px; margin-bottom: 20px; ">
+
+                    <div class="container">
+                        <div class="row align-items-center">
+                            <div class="col-lg-6">
+                                <h1><strong>Services</strong></h1><br>
+                                <p class="col-md-8" style="color: #666; font-weight: 500;">Kami berkomitmen untuk memberikan layanan terbaik dalam membantu Anda menemukan barang yang hilang dengan cepat dan aman</p><br>
+                                <button class="btn btn-primary" style="border-radius: 15px; width: 8cm; font-weight: 500;">Read More <i class="bi bi-arrow-right"></i></button>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="row">
+                                    <!-- Security Teams -->
+                                    <div class="col-md-6 service-item">
+                                        <br><div><span><img src="image/service1.png" alt=""></span></div><br>
+                                        <div>
+                                            <h4>Security Teams</h4>
+                                            <p style="color: #666; font-weight: 500;">Terdapat team keamanan yang menjaga data dan laporan anda tetap aman</p>
+                                        </div>
+                                    </div>
+                                    <!-- Authentication -->
+                                    <div class="col-md-6 service-item">
+                                        <br><div><span><img src="image/service2.png" alt=""></span></div><br>
+                                        <div>
+                                            <h4>Authentication</h4>
+                                            <p style="color: #666; font-weight: 500;">Fitur verifikasi penemu barang untuk memastikan keamanan dan kepercayaan antara pengguna.</p>
+                                        </div>
+                                    </div>
+                                    <!-- Safety Founds -->
+                                    <div class="col-md-6 service-item">
+                                        <br><div><span><img src="image/service3.png" alt=""></span></div><br>
+                                        <div>
+                                            <h4>Safety Founds</h4>
+                                            <p style="color: #666; font-weight: 500;">Proses pengembalian yang aman dan terstruktur untuk memastikan barang kembali ke pemilik yang sah.</p>
+                                        </div>
+                                    </div>
+                                    <!-- Account Place -->
+                                    <div class="col-md-6 service-item">
+                                        <br><div><span><img src="image/service4.png" alt=""></span></div><br>
+                                        <div>
+                                            <h4>Account Place</h4>
+                                            <p style="color: #666; font-weight: 500;">Semua laporan dan catatan Anda dapat dikelola dalam satu tempat yang terorganisir.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+                   
+
+                    </div>
+                    
+                </div>
+            </div>
+        
+      </section>
+
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <!-- Left Column -->
+                <div class="col-md-4 mb-4">
+                    <h3 class="mb-4 bold"><strong>Belum Nemu</strong></h3>
+                    <p class="text-muted">Belum Nemu adalah aplikasi pencarian barang hilang yang memudahkan Anda untuk menemukan benda berharga yang hilang, dari dompet, kunci, hingga barang kesayangan lainnya.</p>
+                    <h5 class="mb-3">Segera Temukan Barang Anda!</h5>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your work email" required>
+                        <button type="submit">Submit</button>
+                    </form>
+                </div>
+
+                <!-- Middle Column -->
+                <div class="col-md-4 mb-4">
+                    <h3 class="mb-4">Contact</h3>
+                    <div class="footer-contact">
+                        <a href="mailto:merchagent@gmail.com">
+                            <i class="bi bi-envelope"></i>
+                            belumnemu@gmail.com
+                        </a>
+                        <a href="tel:+6280345841454">
+                            <i class="bi bi-telephone"></i>
+                            +62 80345841454
+                        </a>
+                    </div>
+                    <div class="social-icons">
+                        <a href="#"><i class="bi bi-facebook"></i></a>
+                        <a href="#"><i class="bi bi-linkedin"></i></a>
+                        <a href="#"><i class="bi bi-twitter"></i></a>
+                        <a href="#"><i class="bi bi-instagram"></i></a>
+                    </div>
+                </div>
+
+                <!-- Right Column -->
+                <div class="col-md-4 mb-4">
+                    <h3 class="mb-4">Apa yang bisa dilakukan ?</h3>
+                    <p class="text-muted">Belum Nemu menjadi solusi praktis untuk membantu menemukan barang yang hilang. Tunggu apa lagi, langsung aja unduh di store kesayangan kalian.</p>
+                    <div>
+                        <a href="#" class="btn"><img src="image/gplay.png" alt="Google Play Store" class="img-fluid mr-2" style="height: 50px; width: 180px; margin-left: -21px;"></a>
+                        <a href="#" class="btn"><img src="image/apstore.png" alt="Google Play Store" class="img-fluid mr-2" style="height: 50px; width: 180px; margin-left: -21px;"></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Copyright -->
+            <div class="copyright">
+                © BELUM NEMU 2024
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
